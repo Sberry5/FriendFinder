@@ -1,13 +1,19 @@
-
-// Routes
-
-// Home route for app
-app.get("/", function(req, res){
-	
-})
+// ====== Required Packages ===== //
+var path = require("path");
 
 
-// Survey route for app
-app.get("/survey" function(req, res){
+// ====== Routing ===== //
+module.exports = function(app){
 
-})
+// Home routing
+	app.get("/home", function(req, res){
+		res.sendFile(path.join(__dirname, "../public/home.html"));
+	});
+
+
+// Survey routing
+	app.get("/survey", function(req, res){
+		res.sendFile(path.join(__dirname, "../public/survey.html"))
+	});
+
+};

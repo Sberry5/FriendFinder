@@ -17,8 +17,8 @@ app.use(bodyParser.json({ type: "application/vnd.api+json" }));
 
 
 // ====== Map for server use routes created ===== //
-require("./routing/apiRoutes")(app);
-require("./routing/htmlRoutes")(app);
+require("./app/routing/apiRoutes")(app);
+require("./app/routing/htmlRoutes")(app);
 
 
 // ====== Listening to start server ===== //
