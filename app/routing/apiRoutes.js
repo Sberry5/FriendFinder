@@ -18,14 +18,14 @@ app.get("/api/friends", function(req, res){
 
 // ====== API POST Routing ===== //
 app.post("/api/friends", function(req, res) {
- 	var newFriend = req.body;
- 	newFriend.routeName = newFriend.name.replace(/\s+/g, "").toLowerCase();
+ 	var newPerson = req.body;
+ 	newPerson.routeName = newPerson.name.replace(/\s+/g, "").toLowerCase();
  	
- 	console.log(newFriend);
+ 	console.log(newPerson);
 
- 	friends.push(newFriend);
+ 	friends.push(newPerson);
 
- 	res.json(newFriend);
+ 	res.json(newPerson);
 });
  
 }
