@@ -17,9 +17,9 @@ module.exports = function(app){
 	});
 
 
-// // Default routing to homepage
-//   	app.get("*", function(req, res) {
-//     	res.sendFile(path.join(__dirname, "../public/home.html"));
-//   	});
+// Default routing to homepage
+  	app.get("*", function(req, res) {
+    	res.sendFile(path.join(__dirname, "../public/home.html"));
+  	});
 
 };

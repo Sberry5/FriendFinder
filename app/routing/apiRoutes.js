@@ -11,15 +11,14 @@ module.exports = function(app){
 
 
 // ====== API GET Routing ===== //
-app.get("/api/friends", function(req, res){
-	res.get(friends);
+app.get("/friends", function(req, res){
+	res.json(friendsArray);
 });
 
 
 // ====== API POST Routing ===== //
-app.post("/api/friends", function(req, res) {
+app.post("/friends", function(req, res) {
  	var newPerson = req.body;
- 	newPerson.routeName = newPerson.name.replace(/\s+/g, "").toLowerCase();
  	
  	console.log(newPerson);
 
