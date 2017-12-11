@@ -11,13 +11,13 @@ module.exports = function(app){
 
 
 // ====== API GET Routing ===== //
-app.get("/friends", function(req, res){
+app.get("/api/friends", function(req, res){
 	res.json(friendsArray);
 });
 
 
 // ====== API POST Routing ===== //
-app.post("/friends", function(req, res) {
+app.post("/api/friends", function(req, res) {
  	var newPerson = req.body;
  	
  	console.log(newPerson);
@@ -32,7 +32,7 @@ app.post("/friends", function(req, res) {
 // To clear out table when working on functionality
 //   app.post("/api/clear", function() {
 //     // Empty out the arrays of data
-//     friends = [];
-//     console.log(friends);
+//     friendsArray = [];
+//     console.log(friendsArray);
 //   });
 // };

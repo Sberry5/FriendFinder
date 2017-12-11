@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Friend Finder</title>
+  <title>Find-a-Person</title>
   <!-- Latest compiled and minified CSS & JS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <script src="https://code.jquery.com/jquery.js"></script>
@@ -178,7 +178,7 @@
       var currentURL = window.location.origin;
 
 // Post newPerson into the friends API
-      $.post(currentURL + "/friends", newPerson, function(data) {
+      $.post(currentURL + "/api/friends", newPerson, function(data) {
         console.log(data);
       });
 

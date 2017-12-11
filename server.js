@@ -4,7 +4,7 @@ var path = require("path");
 var bodyParser = require("body-parser");
 
 
-// ====== Indicates Server and Initialize Port ===== //
+// ====== Indicate Server and Initialize Port ===== //
 var app = express();
 var PORT = process.env.PORT || 3000;
 
