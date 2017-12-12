@@ -19,7 +19,6 @@ app.use(express.static("app/public"));
 // ====== Map for server use routes created ===== //
 require("./app/routing/apiRoutes")(app);
 require("./app/routing/htmlRoutes")(app);
-//require("./app/data/friends")(app);
 
 
 // ====== Listener to start server ===== //

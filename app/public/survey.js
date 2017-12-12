@@ -1,24 +1,24 @@
+// Event listener for user submitting data
 $("#submit").on("click", function(event) {
-      console.log("info submitted")
       event.preventDefault();
 
 // Validate form
   function validateForm(){
     var isValid = true;
     $(".form-control").each(function() {
-      if ($(this).val() === "") {
+      if ($(this).val() === "")
         isValid = false;  
-      }
     });
     $(".chosen-select").each(function(){
       if ($(this).val() === "") {
         isValid = false;
       }
-    })
+    });
     return isValid;
-  }
+  };
 
    if (validateForm() == true){
+
 // Create newUser data from user input
           var newUser = {
         newName: $("#newName").val().trim(),
@@ -49,16 +49,16 @@ $("#submit").on("click", function(event) {
       }
 
 // Clear form
-      $("#newName").val("");
-      $("#newPhoto").val("");
-      $("#question1").val("");
-      $("#question2").val("");
-      $("#question3").val("");
-      $("#question4").val("");
-      $("#question5").val("");
-      $("#question6").val("");
-      $("#question7").val("");
-      $("#question8").val("");
-      $("#question9").val("");
-      $("#question10").val("");
+        $("#newName").val("");
+        $("#newPhoto").val("");
+        $("#question1").val("");
+        $("#question2").val("");
+        $("#question3").val("");
+        $("#question4").val("");
+        $("#question5").val("");
+        $("#question6").val("");
+        $("#question7").val("");
+        $("#question8").val("");
+        $("#question9").val("");
+        $("#question10").val("");
 });
