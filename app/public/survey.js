@@ -19,8 +19,8 @@ $("#submit").on("click", function(event) {
   }
 
    if (validateForm() == true){
-// Create newPerson data from user input
-          var newPerson = {
+// Create newUser data from user input
+          var newUser = {
         newName: $("#newName").val().trim(),
         newPhoto: $("#newPhoto").val().trim(),
         surveyScores: [
@@ -36,12 +36,12 @@ $("#submit").on("click", function(event) {
         $("#question10").val()
         ]
       };
-      console.log("User Input: ", newPerson);
+      console.log("User Input: ", newUser);
 
-// Post newPerson into the friends API
+// Post newUser into the friends API
       var currentURL = window.location.origin;
-      $.post(currentURL + "/api/friends", newPerson, function(data) {
-        console.log(newPerson);
+      $.post(currentURL + "/api/friends", newUser, function(data) {
+        console.log(newUser);
       });
     }
       else {

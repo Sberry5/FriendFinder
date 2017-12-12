@@ -3,7 +3,7 @@ var path = require("path");
 
 
 // ====== API GET Routing ===== //
-var friendsArray = require("../data/friends");
+var friendsArray = require("../data/friends.js");
 
 
 // ====== Routing Function ===== //
@@ -18,15 +18,23 @@ app.get("/api/friends", function(req, res){
 
 // ====== API POST Routing ===== //
 app.post("/api/friends", function(req, res) {
- 	var newPerson = req.body;
- 	
- 	console.log(newPerson);
+ 	var userMatch = {
+ 		name: "",
+ 		photo: "",
+ 		scoreDifference: 1000
+ 	};
 
- 	friends.push(newPerson);
+ 	var newUser = req.body;
+ 	var newName = newUser.name;
+ 	var newPhoto = newUser.photo;
+ 	var newScores = newUser.scores;
 
- 	res.json(newPerson);
+ 	var totalDifference = 0;
+
+ 	for (var i=0; i < friendsArray.length; i++){
+
+ 	}
 });
- 
 }
 
 // To clear out table when working on functionality
