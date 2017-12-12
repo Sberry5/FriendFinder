@@ -13,9 +13,9 @@ $("#submit").on("click", function(event) {
       if ($(this).val() === "") {
         isValid = false;
       }
-    });
+    })
     return isValid;
-  };
+  }
 
    if (validateForm() == true){
 

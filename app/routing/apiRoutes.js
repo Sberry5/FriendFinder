@@ -33,7 +33,7 @@ app.post("/api/friends", function(req, res) {
 
  	for (var i=0; i < friends.length; i++){
  		console.log(friends[i].name);
- 		totalDifference = 0
+ 		totalDifference = 0;
 
  		for (var j=0; j < friends[i].scores[j]; j++){
  			totalDifference += Math.abs(parseInt(newScores[j]) - parseInt(friends[i].scores[j]));
@@ -41,6 +41,7 @@ app.post("/api/friends", function(req, res) {
  					userMatch.name = friends[i].name;
  					userMatch.photo = friends[i].photo;
  					userMatch.friendDifference = totalDifference;
+ 					console.log(userMatch);
  				}
  			}
  		}

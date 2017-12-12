@@ -5,23 +5,23 @@
 A full-stack 'dating' application. Pairs users based on their responses to 10 questions. 
  
 ***
- 
-### **Code Example**
-
-***
 
 ### **Motivation**
+
+This application was a first attempt at full-stack web development.
 
 ***
 
 ### **Installation**
 
+Create clone and install the path and body-parser packages via node. Run the server file in node to start the server "node server.js". Open up port 3000 on your chosen browser.
+
 ***
 
-## **Requirements**
+### **Requirements**
 
 ##### [Node.JS](https://nodejs.org/en/download/)
 ##### [NPM Packages](https://www.npmjs.com)
-* [path](https://www.npmjs.com/package/path) - see link for documentation
-* [body-parser](https://www.npmjs.com/package/body-parser) - see link for documentation
+* [path](https://www.npmjs.com/package/path)
+* [body-parser](https://www.npmjs.com/package/body-parser)
 
