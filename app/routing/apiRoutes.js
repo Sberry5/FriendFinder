@@ -27,7 +27,7 @@ app.post("/api/friends", function(req, res) {
  	var newUser = req.body;
  	var newName = newUser.name;
  	var newPhoto = newUser.photo;
- 	var newScores = newUser.scores;
+ 	var newScores = newUser.surveyScores;
 
  	var totalDifference = 0;
 
