@@ -41,7 +41,7 @@ app.post("/api/friends", function(req, res) {
  					userMatch.name = friends[i].name;
  					userMatch.photo = friends[i].photo;
  					userMatch.friendDifference = totalDifference;
- 					console.log(userMatch);
+ 					console.log("Match", userMatch);
  				}
  			}
  		}

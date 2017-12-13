@@ -39,13 +39,16 @@ $("#submit").on("click", function(event) {
       console.log("User Input: ", newUser);
 
 // Post newUser into the friends API
-      var currentURL = window.location.origin;
-      $.post(currentURL + "/api/friends", newUser, function(data) {
-        console.log(newUser);
-      });
-    }
-      else {
-        alert("Please fill out all fields before submitting.")
+      //var currentURL = window.location.origin;
+
+      $.post("/api/friends", newUser, function(data) {
+        console.log("Post worked: ", newUser);
+      })
+      .done(function() {
+        console.log("Done working");
+      })
+      // else {
+      //   alert("Please fill out all fields before submitting.")
       }
 
 // Clear form
